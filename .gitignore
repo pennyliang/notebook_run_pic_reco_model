@@ -1,0 +1,28 @@
+# 模型权重（太大，不入库）
+models/
+*.safetensors
+*.bin
+*.gguf
+
+# 识别结果输出
+*_识别结果.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# HuggingFace 缓存
+hf_cache/
+.cache/
+
+# 下载的 whl
+*.whl
+
+# IDE / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

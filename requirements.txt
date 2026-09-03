@@ -1,0 +1,18 @@
+# 核心：视觉语言模型推理
+# 注意：torch / torchvision 必须装 CUDA 版，不要用这里的普通 pip 直接装，
+# 请按 README 用 --index-url https://download.pytorch.org/whl/cu124 安装，
+# 或用 curl 下载 whl 后本地安装（详见 README「安装 PyTorch」一节）。
+
+transformers>=5.0.0
+accelerate
+qwen-vl-utils
+pillow
+bitsandbytes            # 4-bit 量化，6GB 显存必备
+
+# HTTP 服务（可选，用 server.py 时才需要）
+fastapi
+uvicorn
+python-multipart
+
+# 模型下载（可选）
+huggingface_hub
